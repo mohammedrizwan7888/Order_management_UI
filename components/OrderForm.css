@@ -1,0 +1,133 @@
+/* Container for the entire order form */
+.order-form {
+  width: 85%;
+  padding: 4px 4px 0px 24px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin-bottom: 15px;
+  margin-top: 19px;
+}
+
+
+.order-table {
+  width: 100%;
+  max-height: 400px; /* Sets a fixed height for the table */
+  overflow-y: auto;  /* Enables scrolling within the table */
+  border-collapse: collapse;
+}
+
+/* Form row styling */
+.form-row {
+  display: flex;
+  justify-content:unset;
+  gap: 13px;
+  margin-bottom: 15px;
+}
+
+
+.space-between {
+  justify-content: space-between;
+}
+
+.right-aligned-1 {
+  padding-right: 82px;
+}
+.right-aligned-2 {
+  
+  padding-left: 306px;
+}
+.order-status-row {
+  justify-content:flex-end; /* Moves content to the right */
+  padding-right: 90px; /* Adjust as needed for alignment */
+}
+
+.order-date-row {
+  justify-content: flex-end;
+  padding-right: 100px; /* Adjust to align as needed */
+}
+/* Input group to contain input and select fields */
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 250px; /* Set a maximum width for a compact layout */
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  padding: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Select styling with a custom arrow */
+.input-group select {
+  border: none;
+  padding: 6px;
+  font-size: 14px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  width: auto;
+  max-width: 30px; /* Set max-width for the select to fit compactly */
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="10" height="5"%3E%3Cpath fill="%23939393" d="M0 0l5 5 5-5z"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
+
+/* Input and select focus effect */
+.input-group input:focus, .input-group select:focus {
+  border-color: #007bff;
+}
+
+/* Additional styling for labels */
+label {
+  font-weight: bold;
+  
+  padding-left: 4px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Specific styling for the order status section */
+.form-row.order-status {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+/* Styling for the notes section */
+.notes {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.notes label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Textarea styling */
+textarea {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+  height:95px;
+  transition: border-color 0.2s;
+}
+
+textarea:focus {
+  border-color: #007bff;
+}

@@ -1,0 +1,296 @@
+.scrollable.table-body-scroll {
+  max-height: 700px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-left: 0px;
+  position: relative;
+  width: 572px;
+}
+
+/* Reducing the scrollbar height */
+.table-body-scroll::after {
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 8px; /* Width of the scrollbar */
+  background: rgba(0, 0, 0, 0.1); /* Background for the scrollbar track */
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.table-body-scroll::-webkit-scrollbar-after {
+  content: "";
+  display: block;
+  height: 23px; /* Adjust height to shorten scrollbar's visible range */
+}
+
+
+
+
+
+ 
+
+
+.table-body-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.table-body-scroll::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.table-body-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.recent-orders-container {
+  position: relative ;
+  width: 100%;
+  
+}
+
+.table-container::-webkit-scrollbar {
+  width: 8px; /* Set width for the vertical scrollbar */
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
+  border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar color */
+  border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Scrollbar color on hover */
+}
+
+
+.table-container {
+  position: relative;
+  padding-left: 16px;
+  max-height: 700px;
+  width: 100%;
+  width: 566px;
+  overflow-x: auto;
+  overflow-x: hidden;
+  max-width: 600px;
+  
+}
+
+/* Arrow styles for top and bottom of the recent-orders container */
+.table-container::before,
+.table-container::after 
+
+{
+  
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  padding-right: 254px;
+  white-space: nowrap;
+  font-size: 10px;
+  color: #232222;
+  position: absolute;
+  right: 5px;
+ 
+}
+
+
+
+
+
+
+/* Styling for recent-orders scrollable section */
+.recent-orders {
+  margin-top: -8px;
+  flex: 2;
+  max-height: 200px;
+  margin-right: 16px;
+  padding: 0px;
+  margin-top: 0;
+  padding-bottom: 400px;
+  width: 97%;
+  box-sizing: content-box;
+  position: relative;
+}
+ 
+
+
+.recent-orders .scrollable-content {
+  max-height: 60px; /* Set maximum height to show vertical scrollbar */
+  
+}
+
+.recent-orders .scrollable-content::-webkit-scrollbar {
+  height: 10px;
+ width: 15px; 
+
+}
+
+.recent-orders .scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #605e5e;
+
+  border-radius: 10px; /* Border radius for a rounded scrollbar */
+}
+
+.recent-orders .scrollable-content::-webkit-scrollbar-track {
+  background-color: transparent; 
+ 
+}
+
+
+.thead {
+  padding-left: 10px;
+}
+
+.recent-orders .container {
+  padding-top: 22px;
+  margin-top: -13px;
+  margin-right: -14px;
+  margin-left: 0px;
+  padding-bottom: 14px;
+  padding-left: 25px;
+  padding-right: 18px;
+  background-color: #7d7272;
+}
+
+.tr {
+  margin-left: -20px;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 21px;
+  padding: 0;
+  color: white;
+  background-color: black;
+  border: 1px solid rgb(241, 234, 234);
+  padding-top: 13px;
+  border-radius: 4px;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.radio-group {
+  display: flex;
+  gap: 12px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+input[type="radio" i] {
+  padding-bottom: 0;
+  color: #0056b3;
+  
+}
+
+.recent-orders-heading {
+  font-size: 22px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+/* Styling for table headers */
+/* Adjusting the header spacing */
+table th {
+  padding: 6px 15px; /* Modify this to increase/decrease space around headers */
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* Specific width settings for each header column */
+th:nth-child(1) { /* For # column */
+  width: 15px;
+}
+
+th:nth-child(2) {
+  width: 150px;
+  padding-right: 43px;
+}
+
+th:nth-child(3) { /* For Customer column */
+  width: 150px;
+}
+
+th:nth-child(4) { /* For Order Date column */
+  width: 120px;
+  padding-right: 0px;
+}
+
+th:nth-child(5) {
+  width: 51px;
+  padding-right: 0px;
+}
+
+th:nth-child(6) {
+  width: 38px;
+  padding-right: 7px;
+}
+
+
+/* Styling for table rows */
+table td {
+  padding: 6px 8px; /* Reduced padding for rows to match header */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 199px;
+  text-align: left; /* Ensures text is aligned to the left */
+}
+
+/* If you want to add more spacing control or adjustments for individual table elements, you can fine-tune the padding, margin, etc. */
+
+
+@media (max-width: 768px) {
+  table td {
+    max-width: 100px;
+  }
+}
+table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 8px;
+  padding-left: 44px;
+  max-width: 199px;
+}
+
+th {
+  color: white;
+  background-color: #0056b3;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+
+
+.number {
+    color: #0056b3;
+    font-weight: bold;
+    padding-left: 20px;
+    text-decoration: underline;
+}
+
+.filter-bar .table {
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+tbody tr:nth-child(even) .number {
+  background-color: transparent;
+}
